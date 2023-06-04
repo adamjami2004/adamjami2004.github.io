@@ -1,6 +1,15 @@
-.container-fluid{
+/* Custom CSS */
+.navbar {
   background-color: #15340D;
   min-height: 70px;
 }
 
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
 
+.navbar-brand img {
+  height: 70px; /* Adjust the height as per your logo size */
+  width: auto; /* To maintain aspect ratio */
+}
