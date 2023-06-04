@@ -1,5 +1,5 @@
 /* Custom CSS */
-.navbar {
+.container-fluid {
   background-color: #15340D;
   min-height: 70px;
 }
@@ -10,6 +10,11 @@
 }
 
 .navbar-brand img {
-  height: 70px; /* Adjust the height as per your logo size */
+  height: 80px; /* Adjust the height as per your logo size */
   width: auto; /* To maintain aspect ratio */
 }
+
+.navbarDropdown{
+  color: white;
+}
+
