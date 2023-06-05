@@ -17,11 +17,30 @@ body{
 }
 
 .rounded-circle{
-  max-height: 80px;
+  height: 80px;
 }
 
 .navbar-nav {
   justify-content: center;
+}
+
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+
+
+#adam{
+  align-items: center;
+  font-size: xx-large;
 }
 
 
