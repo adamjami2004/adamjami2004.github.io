@@ -20,8 +20,9 @@ body{
   height: 80px;
 }
 
-.navbar-nav {
+.navbar-nav :focus {
   justify-content: center;
+  
 }
 
 
@@ -29,12 +30,14 @@ h1{
   color: white;
   text-align: center;
   font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2{
   color: white;
   text-align: center;
   font-size: large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
