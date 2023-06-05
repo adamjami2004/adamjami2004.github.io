@@ -1,20 +1,28 @@
-/* Custom CSS */
-.container-fluid {
-  background-color: #15340D;
-  min-height: 70px;
+
+body{
+ 
+  overflow-x: hidden;
 }
 
-.navbar-brand {
-  color: white;
-  font-weight: bold;
+
+.bg-img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.navbar-brand img {
-  height: 80px; /* Adjust the height as per your logo size */
-  width: auto; /* To maintain aspect ratio */
+.rounded-circle{
+  max-height: 80px;
 }
 
-.navbarDropdown{
-  color: white;
+.navbar-nav {
+  justify-content: center;
 }
+
+
 
