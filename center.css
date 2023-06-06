@@ -45,3 +45,8 @@ body{
     align-items: center;
     font-size: xx-large;
   }
+
+  .nav-item:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+     }
