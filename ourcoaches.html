@@ -38,7 +38,14 @@
             <a class="nav-link active" href="center.html">Our training center</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light">Book Now</button>
+            <script>
+                function redirectToPage_book() {
+                  window.location.href = "book.html";
+                }
+              </script>
+              <div class="text-center">
+                  <button type="button" class="btn btn-outline-light" onclick="redirectToPage_book()">Book Now</button>
+              </div>
           </li>
           
         </ul>
@@ -61,8 +68,13 @@
                             
                         </p>
                         <p>Speciality: Backhand</p>
+                        <script>
+                          function redirectToPage() {
+                            window.location.href = "patrick.html";
+                          }
+                        </script>
                         <div class="text-center">
-                            <button type="button" class="btn btn-outline-primary">See more</button>
+                            <button type="button" class="btn btn-primary" onclick="redirectToPage()">See more</button>
                         </div>
                     </p>
                 </div>
@@ -81,8 +93,13 @@
                         Languages: Spanish, English, Catalan
                     </p>
                     <p>Speciality: Forehand</p>
+                    <script>
+                      function redirectToPage1() {
+                        window.location.href = "tony.html";
+                      }
+                    </script>
                     <div class="text-center">
-                        <button type="button" class="btn btn-outline-primary">See more</button>
+                        <button type="button" class="btn btn-primary" onclick="redirectToPage1()">See more</button>
                     </div>
                     <p></p>
                     <p></p>
@@ -94,12 +111,17 @@
                 <img src="docs\payet.jpg" class="card-img-top" alt="Coach 3">
                 <div class="card-body">
                     <div class=" text-center">
-                        <h5 class="card-title">Pauline Payet</h5>
+                        <h5 class="card-title">Maria Sharapova</h5>
                     </div>
                     <p class="card-text">Languages: French, English, German</p>
                     <p>Speciality: Moving</p>
+                    <script>
+                      function redirectToPage2() {
+                        window.location.href = "payet.html";
+                      }
+                    </script>
                     <div class="text-center">
-                        <button type="button" class="btn btn-outline-primary">See more</button>
+                        <button type="button" class="btn btn-primary" onclick="redirectToPage2()">See more</button>
                     </div>
                     <p></p>
                 </div>
@@ -115,8 +137,13 @@
                     </div>
                     <p class="card-text">Languages: English, Danish, Swedish</p>
                     <p>Speciality: Serve</p>
+                    <script>
+                      function redirectToPage3() {
+                        window.location.href = "rune.html";
+                      }
+                    </script>
                     <div class="text-center">
-                        <button type="button" class="btn btn-outline-primary">See more</button>
+                        <button type="button" class="btn btn-primary" onclick="redirectToPage3()">See more</button>
                     </div>
                     <p></p>
                 </div>

@@ -38,7 +38,14 @@
             <a class="nav-link active" href="center.html">Our training center</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-outline-light">Book Now</button>
+            <script>
+                function redirectToPage_book() {
+                  window.location.href = "book.html";
+                }
+              </script>
+              <div class="text-center">
+                  <button type="button" class="btn btn-outline-light" onclick="redirectToPage_book()">Book Now</button>
+              </div>
           </li>
           
         </ul>
