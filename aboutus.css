@@ -1,4 +1,6 @@
-
+#backG{
+  background-color: antiquewhite;
+}
 body{
     min-height: 2000px;
     /*overflow-x: hidden;*/
@@ -44,11 +46,13 @@ body{
     margin-left: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
+    font-weight: bold;
     }
 
   h4{
     font-size:large;
     padding-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   h5{
@@ -56,12 +60,13 @@ body{
     font-size: xx-large;
     margin-left: 15px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
+    font-weight: bold;
     }
 
     h6{
         font-size:large;
         margin-left: 15px;
+        font-family: 'Times New Roman', Times, serif;
     }
   
   
