@@ -4,7 +4,9 @@ body{
   overflow-x: hidden;
 }
 
-
+#homee{
+  padding-top: 5%;
+}
 
 .bg-img{
   height: 100vh;
