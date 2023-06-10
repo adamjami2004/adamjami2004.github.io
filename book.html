@@ -166,7 +166,10 @@
                 <label for="code">Code</label>
                 <input type="text" class="form-control form-control-sm" id="code" required style=" width: 300px;">
               </div>
-              
+              <div class="form-group">
+                <label for="fullName">name on the card</label>
+                <input type="text" class="form-control form-control-sm" id="fullName" required style=" width: 300px;">
+              </div>
               <br></br>
               <button type="button" class="btn btn-primary" onclick="prevStep(2)">Previous</button>
               <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
@@ -181,7 +184,7 @@
             <p id="recapDate"></p>
             <p id="recapTime"></p>
             <p id="recapOptions"></p>
-            <button type="button" class="btn btn-primary" onclick="resetForm()">Make Another Booking</button>
+            
           </div>
   
         </div>
@@ -215,21 +218,7 @@
       }
   
       function submitForm() {
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const date = document.getElementById('date').value;
-        const time = document.getElementById('time').value;
-        const options = document.getElementById('options').value;
-  
-        document.getElementById('recapFirstName').innerText = 'First Name: ' + firstName;
-        document.getElementById('recapLastName').innerText = 'Last Name: ' + lastName;
-        document.getElementById('recapDate').innerText = 'Date: ' + date;
-        document.getElementById('recapTime').innerText = 'Time: ' + time;
-        document.getElementById('recapOptions').innerText = 'Type: ' + options;
-  
-        document.getElementById('step3').style.display = 'none';
-        document.getElementById('recap').style.display = 'block';
-        document.getElementsByClassName('progress-bar')[0].style.width = '100%';
+        window.location.href = "book1.html";
       }
   
       function resetForm() {

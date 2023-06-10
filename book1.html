@@ -56,95 +56,20 @@
   </nav>
 
 
-
-  <div class="container">
-    <h2>Appointment Form</h2>
-    
-    <!-- Progress bar -->
-    <ul class="nav nav-pills nav-justified">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Step 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Step 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Step 3</a>
-      </li>
-    </ul>
-    
-    <form>
-      <div class="form-group">
-        <label for="first-name">First Name:</label>
-        <input type="text" class="form-control" id="first-name" required>
-      </div>
-      <div class="form-group">
-        <label for="last-name">Last Name:</label>
-        <input type="text" class="form-control" id="last-name" required>
-      </div>
-      <div class="form-group">
-        <label for="address">Address:</label>
-        <input type="text" class="form-control" id="address" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="form-group">
-        <label for="date">Date:</label>
-        <input type="date" class="form-control" id="date" required>
-      </div>
-      <div class="form-group">
-        <label for="hour">Choose an Hour:</label>
-        <select class="form-control" id="hour" required>
-          <option value="" disabled selected>Select an hour</option>
-          <option value="09:00">09:00</option>
-          <option value="10:00">10:00</option>
-          <option value="11:00">11:00</option>
-          <!-- Add more options as needed -->
-        </select>
-      </div>
-      <div class="form-group">
-        <p>Choose the correct answers:</p>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question1" value="answer1"> Answer 1
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question1" value="answer2"> Answer 2
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question1" value="answer3"> Answer 3
-        </label>
-      </div>
-      <div class="form-group">
-        <p>Choose the correct answers:</p>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question2" value="answer1"> Answer 1
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question2" value="answer2"> Answer 2
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question2" value="answer3"> Answer 3
-        </label>
-      </div>
-      <div class="form-group">
-        <p>Choose the correct answers:</p>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question3" value="answer1"> Answer 1
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question3" value="answer2"> Answer 2
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" name="question3" value="answer3"> Answer 3
-        </label>
-      </div>
-      
-      <!-- Submit button -->
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+  <H1 class="text-center" style="margin-top: 13%;">Your bookig has been confirmed</H1>
+  <H1 class="text-center" style="margin-top: 0%;">You'll receive an email confirmation soon.</H1>
+  <script>
+    function redirectToPage_book() {
+      window.location.href = "index.html";
+    }
+  </script>
+  <div class="text-center">
+      <button type="button" class="btn btn-dark" onclick="redirectToPage_book()">Home</button>
   </div>
+
+
+
+  
 
   
 
