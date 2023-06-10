@@ -1,0 +1,33 @@
+#bar{
+    background-color: black;
+  }
+  
+  
+  body{
+      min-height: auto;
+    }
+    
+    
+    
+    
+  .rounded-circle{
+    height: 80px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-control {
+    width: 300px;
+  }
+    
+    
+   
+  
+  
+  
