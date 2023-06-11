@@ -75,23 +75,37 @@
             <form>
               <div class="form-group">
                 <label for="firstName">First Name:</label>
-                <input type="text" class="form-control form-control-sm" id="firstName" required style=" width: 200px;">
+                <input type="text" class="form-control form-control-sm" id="firstName"  style=" width: 200px;">
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name:</label>
-                <input type="text" class="form-control form-control-sm" id="lastName" required style=" width: 200px;">
+                <input type="text" class="form-control form-control-sm" id="lastName" style=" width: 200px;">
+              </div>
+              <div class="form-group">
+                <label for="MAIL">Email adress:</label>
+                <input type="text" class="form-control form-control-sm" id="mail"  style=" width: 200px;">
               </div>
               <div class="form-group">
                 <label for="date">Date:</label>
-                <input type="date" class="form-control form-control-sm" id="date" required style=" width: 200px;">
+                <input type="date" class="form-control form-control-sm" id="date"  style=" width: 200px;">
               </div>
               <div class="form-group">
                 <label for="time">Time:</label>
-                <input type="time" class="form-control form-control-sm" id="time" required style=" width: 200px;">
+                <select class="form-control form-control-sm" id="options"  style=" width: 200px;">
+                  <option value="">Select an option</option>
+                  <option value="a">9:00</option>
+                  <option value="a">10:00</option>
+                  <option value="a">11:00</option>
+                  <option value="a">12:00</option>
+                  <option value="a">13:00</option>
+                  <option value="a">14:00</option>
+                  <option value="a">15:00</option>
+                  <option value="a">16:00</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="options">Number of players:</label>
-                <select class="form-control form-control-sm" id="options" required style=" width: 200px;">
+                <select class="form-control form-control-sm" id="options"  style=" width: 200px;">
                   <option value="">Select an option</option>
                   <option value="Alone">Alone</option>
                   <option value="Group of 2">Group of 2</option>
@@ -109,7 +123,7 @@
             <form>
               <div class="form-group">
                 <label for="options2">Choose your surface</label>
-                <select class="form-control form-control-sm" id="options2" required style=" width: 200px;">
+                <select class="form-control form-control-sm" id="options2"  style=" width: 200px;">
                   <option value="">Select an option</option>
                   <option value="option4">Hard</option>
                   <option value="option5">Clay</option>
@@ -119,7 +133,7 @@
               
               <div class="form-group">
                 <label for="options3">Select your coach</label>
-                <select class="form-control form-control-sm" id="options3" required style=" width: 200px;">
+                <select class="form-control form-control-sm" id="options3"  style=" width: 200px;">
                   <option value="">Select an option</option>
                   <option value="option7">Patrick Mouratoglou</option>
                   <option value="option8">Tony nadal</option>
@@ -131,7 +145,7 @@
 
               <div class="form-group">
                 <label for="options3">Select the session type</label>
-                <select class="form-control form-control-sm" id="options3" required style=" width: 200px;">
+                <select class="form-control form-control-sm" id="options3"  style=" width: 200px;">
                   <option value="">Select an option</option>
                   <option value="option7">1/2 hour</option>
                   <option value="option8">1 hour</option>
@@ -161,33 +175,26 @@
             <form>
               <div class="form-group">
                 <label for="creditCard">Credit Card Number</label>
-                <input type="text" class="form-control form-control-sm" id="creditCard" required style=" width: 300px;">
+                <input type="text" class="form-control form-control-sm" id="creditCard"  style=" width: 300px;">
               </div>
               
               <div class="form-group">
                 <label for="code">Code</label>
-                <input type="text" class="form-control form-control-sm" id="code" required style=" width: 300px;">
+                <input type="text" class="form-control form-control-sm" id="code"  style=" width: 300px;">
               </div>
               <div class="form-group">
-                <label for="fullName">name on the card</label>
-                <input type="text" class="form-control form-control-sm" id="fullName" required style=" width: 300px;">
+                <label for="fullName">Name on the card</label>
+                <input type="text" class="form-control form-control-sm" id="fullName"  style=" width: 300px;">
               </div>
               <br></br>
               <button type="button" class="btn btn-primary" onclick="prevStep(2)">Previous</button>
-              <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+              <button type="button" class="btn btn-primary" onclick="confirmae()">Book</button>
             </form>
           </div>
+          
   
-          <!-- Recap -->
-          <div id="recap" style="display: none;">
-            <h5>Booking Recap</h5>
-            <p id="recapFirstName"></p>
-            <p id="recapLastName"></p>
-            <p id="recapDate"></p>
-            <p id="recapTime"></p>
-            <p id="recapOptions"></p>
-            
-          </div>
+          
+          
   
         </div>
       </div>
@@ -219,29 +226,11 @@
         }
       }
   
-      function submitForm() {
+      function confirmae() {
         window.location.href = "book1.html";
       }
   
-      function resetForm() {
-        document.getElementById('recap').style.display = 'none';
-        document.getElementById('step1').style.display = 'block';
-        document.getElementsByClassName('progress-bar')[0].style.width = '33%';
-  
-        // Reset input fields
-        document.getElementById('firstName').value = '';
-        document.getElementById('lastName').value = '';
-        document.getElementById('date').value = '';
-        document.getElementById('time').value = '';
-        document.getElementById('options').value = '';
-        document.getElementById('options2').value = '';
-        document.getElementById('picture').value = '';
-        document.getElementById('options3').value = '';
-        document.getElementById('creditCard').value = '';
-        document.getElementById('expiryDate').value = '';
-        document.getElementById('code').value = '';
-        document.getElementById('fullName').value = '';
-      }
+      
     </script>
 
 

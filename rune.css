@@ -24,6 +24,9 @@ body{
     justify-content: center;
     
   }
+  h5,h6{
+    font-family: 'Times New Roman', Times, serif;
+  }
   
   
   h1{
